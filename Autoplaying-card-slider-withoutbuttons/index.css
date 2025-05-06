@@ -24,18 +24,22 @@ body{
         gap: 20px;
         transition: all 0.3s ease;
         .card{
-            width: 200px;
-            max-width: 40%;
+            width: 30%;
             height: 90%;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex: 0 0 250px;
+            flex: 0 0 30%;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             font-size: 2rem;
             color: white;
             background-color: rgba(0, 0, 0, 0.4);
             border-radius: 10px;
+            @media screen and (max-width : 992px) {
+                width: 40%;
+                flex: 0 0 40%;
+                font-size: 1rem;
+            }
         }
     }
     .cards::-webkit-scrollbar {
